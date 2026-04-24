@@ -9,7 +9,7 @@ public class QuizLeaderboard {
     static final String REG_NO   = "RA2311026010701";
     static final String BASE_URL = "https://devapigw.vidalhealthtpa.com/srm-quiz-task";
     static final int TOTAL_POLLS = 10;
-    static final int DELAY_MS    = 2000;
+    static final int DELAY_MS    = 5000;
 
     public static void main(String[] args) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
