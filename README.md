@@ -17,7 +17,7 @@ A backend integration challenge that simulates a real-world distributed system w
 
 ## Solution Approach
 
-### Key Insight — Deduplication
+### Key Problem to be addressed — Deduplication
 
 In distributed systems, the same message can be delivered more than once. The fix is to track which events have already been processed using a unique composite key:
 
@@ -71,7 +71,7 @@ java QuizLeaderboard
 
 ---
 
-## Output
+## Sample Output
 
 The program prints progress for every poll, showing how many new events were added and how many duplicates were ignored:
 
@@ -110,7 +110,7 @@ quiz-leaderboard/
 └── src/
     └── main/
         └── java/
-            └── QuizLeaderboard.java   ← single self-contained file
+            └── QuizLeaderboard.java   
 ```
 
 ---
