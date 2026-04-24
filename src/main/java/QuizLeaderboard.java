@@ -8,18 +8,18 @@ public class QuizLeaderboard {
 
     static final String REG_NO   = "RA2311026010701";
     static final String BASE_URL = "https://devapigw.vidalhealthtpa.com/srm-quiz-task";
-    static final int    TOTAL_POLLS = 10;
-    static final int    DELAY_MS    = 5000;
+    static final int TOTAL_POLLS = 10;
+    static final int DELAY_MS    = 2000;
 
     public static void main(String[] args) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
-        Set<String>          seen   = new HashSet<>();
+        Set<String> seen = new HashSet<>();
         Map<String, Integer> scores = new LinkedHashMap<>();
 
         for (int poll = 0; poll < TOTAL_POLLS; poll++) {
             if (poll > 0) {
-                System.out.printf("  Waiting %ds before next poll...%n", DELAY_MS / 1000);
+                System.out.printf(" Waiting %ds before next poll...%n", DELAY_MS / 1000);
                 Thread.sleep(DELAY_MS);
             }
 
